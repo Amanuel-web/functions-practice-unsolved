@@ -13,8 +13,6 @@ function splitFirstAndLastNames(str) {
   return str.split(' ');
 }
 
-console.log(splitFirstAndLastNames('John Smith'))
-
 /** =========================
  * The personAge() constant is assigned to a function, that takes an object of person Data as the argument.
  * The function returns the value of the age property of the argument object
@@ -65,10 +63,10 @@ const logSecondsUpToMax = function(max) {
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//   splitFirstAndLastNames: splitFirstAndLastNames || undefined,
-//   personAge: personAge || undefined,
-//   isNameInArray: isNameInArray || undefined,
-//   logSecondsUpToMax: logSecondsUpToMax || undefined,
-// }
-// export { f }
+const f = {
+  splitFirstAndLastNames: splitFirstAndLastNames || undefined,
+  personAge: personAge || undefined,
+  isNameInArray: isNameInArray || undefined,
+  logSecondsUpToMax: logSecondsUpToMax || undefined,
+}
+export { f }
