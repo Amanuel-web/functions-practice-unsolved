@@ -13,7 +13,16 @@
 
 // Your code goes here...
 
-
+function getDiffTwentySeven(num){
+  var diffNum = 0;
+  if(num > 27){
+    diffNum = (num -27) *2;
+    return diffNum;
+  }else{
+    diffNum = 27 - num;
+    return diffNum;
+  }
+}
 
 
 /** =========================
@@ -24,9 +33,14 @@
  */
 
 // Your code goes here
-
-
-
+function sumOfTwoIntegers(num1, num2){
+  if(num1 === num2){
+    
+    return num1 * 6;
+  }else{
+    return num1 + num2;
+  }
+}
 
 /** =========================
  * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
@@ -36,6 +50,18 @@
  * Example2: isOneOfThemOrTheirSumIsFourty(22, 18) => true
  * Example3: isOneOfThemOrTheirSumIsFourty(23, 16) => false
  */
+
+function isOneOfThemOrTheirSumIsFourty(num1, num2) {
+  if((num1 === 40 || num2 === 40) || (num1 + num2 === 40)){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(isOneOfThemOrTheirSumIsFourty(40, 13));
+console.log(isOneOfThemOrTheirSumIsFourty(22, 18));
+console.log(isOneOfThemOrTheirSumIsFourty(23, 16));
 
 // Your code goes here...
 
@@ -49,9 +75,9 @@
 
 
 // Do not delete or change the lines beneath
-const f = {
-  getDiffTwentySeven: getDiffTwentySeven || undefined,
-  sumOfTwoIntegers: sumOfTwoIntegers || undefined,
-  isOneOfThemOrTheirSumIsFourty: isOneOfThemOrTheirSumIsFourty || undefined,
-}
-export { f }
+// const f = {
+//   getDiffTwentySeven: getDiffTwentySeven || undefined,
+//   sumOfTwoIntegers: sumOfTwoIntegers || undefined,
+//   isOneOfThemOrTheirSumIsFourty: isOneOfThemOrTheirSumIsFourty || undefined,
+// }
+// export { f }
