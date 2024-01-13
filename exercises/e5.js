@@ -14,13 +14,10 @@
 // Your code goes here...
 
 function getDiffTwentySeven(num){
-  var diffNum = 0;
   if(num > 27){
-    diffNum = (num -27) *2;
-    return diffNum;
+    return (num -27) *2;
   }else{
-    diffNum = 27 - num;
-    return diffNum;
+    return  27 - num;
   }
 }
 
@@ -58,10 +55,6 @@ function isOneOfThemOrTheirSumIsFourty(num1, num2) {
     return false;
   }
 }
-
-console.log(isOneOfThemOrTheirSumIsFourty(40, 13));
-console.log(isOneOfThemOrTheirSumIsFourty(22, 18));
-console.log(isOneOfThemOrTheirSumIsFourty(23, 16));
 
 // Your code goes here...
 

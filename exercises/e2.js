@@ -19,14 +19,10 @@ return sideA * sideB;
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
-
-function rectArea(sideA,sideB){
-  return sideA * sideB;
-  }
   
-  var room1 = rectArea(4,6);
-  var room2 = rectArea(13,3);
-  var room3 = rectArea(4,8);
+  const room1 = rectArea(4,6);
+  const room2 = rectArea(13,3);
+  const room3 = rectArea(4,8);
 
 /**
  * =============================================================
